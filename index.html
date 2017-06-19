@@ -14,7 +14,7 @@
         
     </head>
     <body>
-     <div class="container">
+     <div class="container" >
             <div class="navbar navbar-default">
                 
                 
@@ -31,14 +31,15 @@
                     </li>
                 </ul> 
              </div>
-            <nav class="navbar navbar-default" >
+            <nav class="navbar navbar-default"   >
                 
-                <div class="container-fluid">
-                    <div class="navbar-header">
+                <div class="container-fluid" >
+                
+                    <div class="navbar-header"  id="grad1">
                         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myMenu">
                             <i class="fa fa-bars"></i>
                         </button>
-                        <img class="img-responsive" src="img/nike.png"> 
+                        <img class="img-responsive" src="img/logo.jpg"> 
                     </div>
                     <div class="collapse navbar-collapse" id="myMenu">
                         <ul class="nav navbar-nav navbar-right" >
@@ -49,16 +50,20 @@
                             <li><a href="#">Featured Items</a></li>
                         </ul>
                     </div>
-                </div>  
+                </div> 
+                    
                 
             </nav>
+         <br>
+         </div>
+            <div class="container">
             <table id="cart" class="table table-hover table-condensed">
     				<thead>
 						<tr>
 							<th style="width:50%">Product</th>
 							<th style="width:10%">Price</th>
 							<th style="width:8%">Quantity</th>
-							<th style="width:22%" class="text-center">Subtotal</th>
+							<th style="width:22%" class="text-center">Total</th>
 							<th style="width:10%"></th>
 						</tr>
 					</thead>
@@ -66,103 +71,162 @@
 						<tr>
 							<td data-th="Product">
 								<div class="row">
-									<div class="col-sm-2 hidden-xs"><img src="http://placehold.it/100x100" alt="..." class="img-responsive"/></div>
-									<div class="col-sm-10">
-										<h4 class="nomargin">Product 1</h4>
+                                    <div class="col-sm-12">
+									<div class="col-sm-2 "><img src="img/tshirts.jpg" alt="tshirts" class="img-responsive img-rounded"/></div>
+									<div class="col-sm-10 hidden-xs">
+										<h4 class="nomargin hidden-xs">T-Shirt / Item Name</h4>
 										<p>Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet.</p>
 									</div>
 								</div>
+                             </div>
 							</td>
-							<td data-th="Price">$1.99</td>
+							<td data-th="Price">88.99</td>
 							<td data-th="Quantity">
 								<input type="number" class="form-control text-center" value="1">
 							</td>
-							<td data-th="Subtotal" class="text-center">1.99</td>
+							<td data-th="Subtotal" class="text-center">88.99</td>
 							<td class="actions" data-th="">
 								
 								<button class="btn btn-danger btn-sm"><i class="fa fa-trash-o"></i></button>								
 							</td>
 						</tr>
-                        <tr>
-							<td data-th="Product">
-								<div class="row">
-									<div class="col-sm-2 hidden-xs"><img src="http://placehold.it/100x100" alt="..." class="img-responsive"/></div>
-									<div class="col-sm-10">
-										<h4 class="nomargin">Product 1</h4>
-										<p>Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet.</p>
-									</div>
-								</div>
-							</td>
-							<td data-th="Price">$1.99</td>
-							<td data-th="Quantity">
-								<input type="number" class="form-control text-center" value="1">
-							</td>
-							<td data-th="Subtotal" class="text-center">1.99</td>
-							<td class="actions" data-th="">
-								
-								<button class="btn btn-danger btn-sm"><i class="fa fa-trash-o"></i></button>								
-							</td>
-						</tr>
-                        <tr>
-							<td data-th="Product">
-								<div class="row">
-									<div class="col-sm-2 hidden-xs"><img src="http://placehold.it/100x100" alt="..." class="img-responsive"/></div>
-									<div class="col-sm-10">
-										<h4 class="nomargin">Product 1</h4>
-										<p>Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet.</p>
-									</div>
-								</div>
-							</td>
-							<td data-th="Price">$1.99</td>
-							<td data-th="Quantity">
-								<input type="number" class="form-control text-center" value="1">
-							</td>
-							<td data-th="Subtotal" class="text-center">1.99</td>
-							<td class="actions" data-th="">
-								
-								<button class="btn btn-danger btn-sm"><i class="fa fa-trash-o"></i></button>								
-							</td>
-						</tr>
-                        <tr>
-							<td data-th="Product">
-								<div class="row">
-									<div class="col-sm-2 hidden-xs"><img src="http://placehold.it/100x100" alt="..." class="img-responsive"/></div>
-									<div class="col-sm-10">
-										<h4 class="nomargin">Product 1</h4>
-										<p>Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet.</p>
-									</div>
-								</div>
-							</td>
-							<td data-th="Price">$1.99</td>
-							<td data-th="Quantity">
-								<input type="number" class="form-control text-center" value="1">
-							</td>
-							<td data-th="Subtotal" class="text-center">1.99</td>
-							<td class="actions" data-th="">
-								
-								<button class="btn btn-danger btn-sm"><i class="fa fa-trash-o"></i></button>								
-							</td>
-						</tr>
-					</tbody>
-                
-					<tfoot>
-						<tr class="visible-xs">
-							<td class="text-center"><strong>Total 1.99</strong></td>
-						</tr>
+                </tbody>
+                <tbody>
 						<tr>
-							<td><a href="#" class="btn btn-warning"><i class="fa fa-angle-left"></i> Continue Shopping</a></td>
-							<td colspan="2" class="hidden-xs"></td>
-							<td class="hidden-xs text-center"><strong>Total $1.99</strong></td>
-							<td><a href="#" class="btn btn-success btn-block">Checkout <i class="fa fa-angle-right"></i></a></td>
+							<td data-th="Product">
+								<div class="row">
+                                    <div class="col-sm-12">
+									<div class="col-sm-2"><img src="img/tshirts.jpg" alt="tshirts" class="img-responsive img-rounded"/></div>
+									<div class="col-sm-10 hidden-xs">
+										<h4 class="nomargin hidden-xs">T-Shirt / Item Name</h4>
+										<p>Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet.</p>
+									</div>
+								</div>
+                             </div>
+							</td>
+							<td data-th="Price">88.99</td>
+							<td data-th="Quantity">
+								<input type="number" class="form-control text-center" value="1">
+							</td>
+							<td data-th="Subtotal" class="text-center">88.99</td>
+							<td class="actions" data-th="">
+								
+								<button class="btn btn-danger btn-sm"><i class="fa fa-trash-o"></i></button>								
+							</td>
 						</tr>
-					</tfoot>
-				</table>
+                </tbody>
+                <tbody>
+						<tr>
+							<td data-th="Product">
+								<div class="row">
+                                    <div class="col-sm-12">
+									<div class="col-sm-2"><img src="img/tshirts.jpg" alt="tshirts" class="img-responsive img-rounded"/></div>
+									<div class="col-sm-10 hidden-xs">
+										<h4 class="nomargin hidden-xs">T-Shirt / Item Name</h4>
+										<p>Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet.</p>
+									</div>
+								</div>
+                             </div>
+							</td>
+							<td data-th="Price">88.99</td>
+							<td data-th="Quantity">
+								<input type="number" class="form-control text-center" value="1">
+							</td>
+							<td data-th="Subtotal" class="text-center">88.99</td>
+							<td class="actions" data-th="">
+								
+								<button class="btn btn-danger btn-sm"><i class="fa fa-trash-o"></i></button>								
+							</td>
+						</tr>
+                </tbody>
+                <tbody>
+						<tr>
+							<td data-th="Product">
+								<div class="row">
+                                    <div class="col-sm-12">
+									<div class="col-sm-2"><img src="img/tshirts.jpg" alt="tshirts" class="img-responsive img-rounded"/></div>
+									<div class="col-sm-10 hidden-xs">
+										<h4 class="nomargin hidden-xs">T-Shirt / Item Name</h4>
+										<p>Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet.</p>
+									</div>
+								</div>
+                             </div>
+							</td>
+							<td data-th="Price">88.99</td>
+							<td data-th="Quantity">
+								<input type="number" class="form-control text-center" value="1">
+							</td>
+							<td data-th="Subtotal" class="text-center">88.99</td>
+							<td class="actions" data-th="">
+								<button class="btn btn-danger btn-sm"><i class="fa fa-trash-o"></i></button>
+															
+							</td>
+						</tr>
+                </tbody>
+                    
+				   	
+				
+                
+            </table>
+            <div class="row">
+                <div class="col-md-2">
+                	<button class="btn btn-circle "><i class="fa fa-upload"></i>Update</button></div>
+                 <div class="col-md-6">
+                    <button class="btn btn-circle "><i class="fa fa-shopping-cart"></i>Checkout</button>
+                </div>
+                <div class="col-md-2">
+                    <div data-th="Subtotal" ><strong>Total $1.99</strong></div>
+                </div>
+				<div class="col-md-2">
+				    <button class="btn bg-success ">Checkout</button>	
+                    </div>
+            </div>
         </div>
+        <br>
+        <br>
+        <div class="container">
+        <div class="row">
+                    <div class="col-sm-12 col-md-3">
+                        <h1> Quick Links</h1><br>
+                        <ul>
+                            <a href="#"><u>Home</u></a> <br><br>
+                            <a href="#"><u>Event</u></a><br><br>
+                            <a href="#"><u>Support</u></a><br><br>
+                            <a href="#"><u>Contact</u></a><br><br>
+                        </ul>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <h1>Announcements/Promoted Content</h1>
+                        <div class="shadow">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic ty  pesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+                            </div>
+                        
+                    </div>
+                    
+                    <div class="col-sm-12 col-md-3">
+                        <h1>Coming Soon</h1>
+                        <br><br>
+                        <img class="img-responsive-1" src="img/soon.jpg" />
+                    </div>
+                </div>
+                <br><br>
+                <h5><i class="fa fa-copyright" ></i>2017</h5>
+                
+            
+            
         
-       
+       </div>
         
         
+        <div class="bigspace"></div>
         
+        <script>
+            $(document).ready(function(){
+                $("button").click(function(){
+            $("#remove").remove();
+                });
+            });
+        </script>
             
     <!-- Load Bootstrap JS --> 
         <script src="bootstrap/js/jquery-3.2.1.min.js"></script> 
